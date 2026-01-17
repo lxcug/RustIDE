@@ -255,3 +255,14 @@ Tab å³é”®èœå•é¢å¤–å¢åŠ ï¼šClose Allï¼ˆå…³é—­æ‰€æœ‰ tabï¼ŒåŒ…æ‹¬ pinnedï¼‰å’
 
 - Added tab context menu actions: Close All (closes every tab, including pinned) and Close All But Pinned (keeps only pinned tabs).
 - Removed the default Untitled tab on startup; the Editor tab shows an empty-state prompt when no file is open.
+
+## RQ-0024 (2026-01-17) ¡ª Done
+
+**Request**
+
+ÎÒÏÖÔÚÒÑ¾­¹ØÁªÁËgit²Ö¿â£¬µ«ÊÇÃ»ÓĞ´¦ÀíºÃpull³åÍ»£¿°ïÎÒ´¦ÀíÏÂ
+
+**Resolution**
+
+- Set main to track origin/main, fetched the remote commits, and merged with --allow-unrelated-histories so the upstream initial commit (LICENSE) is now part of our history without dropping your work (git branch --set-upstream-to=origin/main main; git merge origin/main --allow-unrelated-histories).
+- After the merge the working tree is clean and git status reports we are ahead by the new commits; run git push after reviewing so the remote catches up.
