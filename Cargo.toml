@@ -1,0 +1,14 @@
+[workspace]
+members = [
+  "crates/rustide-app",
+  "crates/rustide-editor",
+  "crates/rustide-syntax",
+  "crates/rustide-project",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"

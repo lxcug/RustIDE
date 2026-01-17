@@ -1,0 +1,24 @@
+[package]
+name = "rustide-app"
+version = "0.1.0"
+edition.workspace = true
+
+[dependencies]
+anyhow = "1.0.98"
+eframe = "0.33.3"
+egui_commonmark = "0.22.0"
+egui_dock = { version = "0.18.0", features = ["serde"] }
+ignore = "0.4.25"
+ropey = "1.6.1"
+rfd = "0.15.4"
+rustide-editor = { path = "../rustide-editor" }
+rustide-project = { path = "../rustide-project" }
+rustide-syntax = { path = "../rustide-syntax" }
+serde = { version = "1.0.217", features = ["derive"] }
+serde_json = "1.0.138"
+tree-sitter = "0.24.7"
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.20", features = ["env-filter"] }
+
+[lints]
+workspace = true
